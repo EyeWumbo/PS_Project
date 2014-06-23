@@ -496,7 +496,7 @@
 
 		if ( $().niceScroll ) {
 			$("html").niceScroll({
-	            cursorcolor:"#569DFF",
+	            cursorcolor:"#A7A7A7",
 	            cursorwidth:10,
 	            cursorborder: 0,
 	            cursorborderradius: 0,
