@@ -1026,7 +1026,7 @@ strong {
 	line-height: 1.2;
 }
 .testimonials-slider .bxslider li img{
-	width: 150px;
+	/*width: 150px;*/
 	height: 150px;
 	/*-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -1803,7 +1803,7 @@ footer#footer #foot-num{
 	list-style: none;
 }
 .bxslider li img{
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .feature-box{
