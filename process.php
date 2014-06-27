@@ -1,6 +1,6 @@
 ﻿<?php
 // Information to be modified
-$your_email = "daghotifish@gmail.com"; // email address to which the form data will be sent
+$your_email = "doublr.us@gmail.com"; // email address to which the form data will be sent
 $subject = "Contact Form"; // subject of the email that is sent
 $thanks_page = "index.html"; // path to the thank you page following successful form submission
 $contact_page = "index.html"; // path to the HTML contact page where the form appears
