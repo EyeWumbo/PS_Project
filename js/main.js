@@ -72,7 +72,7 @@
 					else if($('#nav-desktop').hasClass('nav-normal')){
 						nav = $('#nav-desktop').height();
 					}
-					offset_top = $(href).offset().top - nav;
+					offset_top = $(href).offset().top - nav + nav;
 					$('html,body').animate({ scrollTop: offset_top+1}, 1000, 'easeOutCirc');
 					e.preventDefault();
 				}

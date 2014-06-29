@@ -140,7 +140,7 @@ header.container {
 	float:left;
 	width:200px;
 	height:200px;
-	background:  url("../img/metro/nav-bg-m.png");
+	/*background:  url("../img/metro/nav-bg-m.png");*/
 	text-align:center;
 }
 .navi-sq-m img {		
