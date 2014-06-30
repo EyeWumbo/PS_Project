@@ -55,7 +55,7 @@ header.container {
 
 
 #block-left {
-	float:left;
+	float:center;
     	margin-top: 70px;
 	width:990px;
 	height:525px;

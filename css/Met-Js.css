@@ -374,7 +374,7 @@
 .list-tile,
 .copy-tile,
 .slide {
-  float: left;
+  float: center;
 }
 .tile-strip.bounce,
 .live-tile.bounce,
