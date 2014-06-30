@@ -613,6 +613,7 @@
 		rart.initPlugin();
 		rart.shortcode();
 		rart.fullscreen_slider();
+
 	});
 
 	/*------------------LOADER------------------*/
