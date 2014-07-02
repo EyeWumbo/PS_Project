@@ -51,6 +51,27 @@ a
 	outline: none !important;
 }
 
+.container:hover {
+	background-color: #FFF;
+}
+
+.clickable-topbar:hover
+{
+	background-color: #FFF;
+	opacity: 95%;
+}
+
+.clickable-topbar{
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+}
+
 a:hover, a:active
 {
 	color: #666;
@@ -153,18 +174,40 @@ strong {
 	display: none;
 }
 
+#text-container {
+	top:25%;
+	width:80%;
+	margin-left:10%;
+	margin-right:0px;
+}
+
+#font-container { 
+	display: block;
+	float: center;
+	text-align:center;
+	font-family: "bebasneueregular";
+	color:#FFF;
+}
+
+#font-container > p {
+	display:inline-block;
+	font-size: 500%;
+}
+
+#block-left {
+	margin-left: auto;
+    margin-right: auto;
+}
+
 .nav-normal
 {
+	z-index: 4;
 	width: 100%;
-	z-index: 2000;
 	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-	z-index: 2000;
 	position: relative;
 	overflow: hidden;
-	
-
 	opacity: 0.95;
 }
 
@@ -218,7 +261,6 @@ strong {
 }
 .nav-normal ul li:hover a{
 	color: #777;
-	background: #fff;
 	border-bottom: 1px solid #777;
 }
 
@@ -385,13 +427,13 @@ strong {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	z-index: 1;
+	z-index: -1;
 }
 
 .parallax .parallax_wrap
 {
 	position: relative;
-	z-index: 6;
+	z-index: 2;
 	padding: 60px 0 50px;
 }
 .parallax .title {
