@@ -1,0 +1,10 @@
+/*****************************
+ All rights reserved.
+ AllFont.net (c) 2011-2014
+ *****************************/
+@font-face {
+  font-family: 'Bookman Old Style Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Bookman Old Style Bold'), local('BookmanOldStyle-Bold'), url(http://allfont.net/css/fonts/bookman-old-style-bold/7fd13e86ae699e2e0b704fa09098f17d.woff) format('woff');
+}
