@@ -3,43 +3,73 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/tired.css" rel="stylesheet" />
 		<link href="css/icons.css" rel="stylesheet" />
-		<link href="http://allfont.net/css/?fonts=air-conditioner" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
 		
 
 		<script src="js/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 		<script src="js/testParallax.js"></script>
+		<script>
+			var map;
+
+			function init(){
+				var mapOptions = {
+					zoom:17,
+					center: new google.maps.LatLng(33.697934, -117.846753)
+				};
+				map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				var marker = new google.maps.Marker({
+					position : mapOptions.center,
+					map: map,
+					title: "Doublr Labs"
+				});
+			}
+
+			function resize(){
+				map.setCenter(new google.maps.LatLng(33.697934, -117.846753));
+			}
+
+			google.maps.event.addDomListener(window, 'load', init);
+			google.maps.event.addDomListener(window, 'resize', resize);
+		</script>
 	</head>
-	<body>
-		<ul class="custom-nav" role="tablist">
-			<li id="logo" class="pull-left"><a href="#">DOUBLR</a></li>
-			<li class="info-tab pull-right"><a href="#">Contact</a></li>
-			<li class="info-tab pull-right"><a href="#">Order</a></li>
-			<li class="info-tab pull-right"><a href="#">Learn More</a></li>
-		</ul>
+	<body>	
+		<div class="temp">
+			<div class="col-xs-3 text-left">
+				<a id="logo" href="#">DOUBLR</a>
+			</div>
+			<div class="col-xs-5"></div>
+			<div class="col-xs-1 text-right">
+				<a class="bar_item" href="#">Contact</a>
+			</div>
+			<div class="col-xs-1 text-right">
+				<a class="bar_item" href="#">Order</a>
+				<nav class="menu-icon" href="#"><span class="icon-align-justify"></span></nav>
+			</div>
+			<div class="col-xs-1 text-right">
+				<a class="bar_item" href="#">Learn More</a>
+			</div>
+		</div>
 		<section id="landingScroll" data-speed="8" data-type="background">
-			<div class="container">
-				<div style="height:33%"></div>
-				<h1 style="text-align:center; font-family:bebasneueregular; font-size:8vw">THE NEW <a style="color:#FFF">YOU</a> IS HERE</h1>
+			<div class="container landingText">
+				<h1 style="text-align:center; font-family:bebasneueregular;">THE NEW <a id="you_go" style="color:#FFF; font-size:50%;">YOU</a> IS HERE</h1>
 			</div>
 		</section>
 		<section id="data-container">
 			<div style="margin-top:5%">
-				<h1 style="text-align:center; font-family:bebasneueregular; font-size:2vw">WE ARE DOUBLR</h1>
+				<h1 style="text-align:center; font-family:bebasneueregular; font-size:3em">WE ARE DOUBLR</h1>
 			</div>
 			<div style="width:25%; height:3px; background-color:#000; margin:5% auto"></div>
 			<div style="margin-bottom:5%">
-				<p style="text-align:center; font-size:1.5vw">
+				<p style="text-align:center; font-size:1.5em">
 					Some text here about us.
 				</p>
 			</div>
 			<div id="finalInfo">
-				<div style="padding-left:5%">
-					<img id="bottomIMG" src="img/team/InAction2.png" style="max-width:50%"/>
-				</div>
-				<div style="display:inline">
-					<div class="service-icon" data-animated="fadeInRight">
-	                  <span class="icon-gear"></span>
+				<div id="map-canvas"></div>
+				<div id="teamInfo">
+					<div>
 	                  <h3>Development</h3>
 	                  <p>Praesent faucibus nisl sit amet nulla sollicitudin</p>
               		</div>

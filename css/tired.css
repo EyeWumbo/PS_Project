@@ -1,58 +1,132 @@
-.info-tab {
-	position:relative;
-	font-size: 1.5vw;
-	padding: 2% 1%;
+@-webkit-keyframes grow {
+	from{font-size:200%;}
+	to{font-size:50%;}
 }
 
-.info-tab:hover {
-	background-color: rgba(255,255,255,.85);
+@media only screen and (max-width: 640px) {
+	.bar_item {
+		display: none;
+	}
+
+	.menu-icon {
+		display: inline-block;
+	}
+
+	
+
+	#map-canvas {
+		width: 90%;
+		left:5%;
+	}
+
 }
 
-.info-tab > a {
+@media only screen and (min-width: 640px) {
+
+	.menu-icon {
+		display: none;
+	}
+
+	#map-canvas {
+		width: 40%; 
+		margin-left: 5%;
+	}
+
+	#finalInfo {
+		margin: 0 auto;
+	}
+
+	#teamInfo{
+		top:5%;
+	}
+
+}
+
+.menu-icon {
+	width: 40px;
+	height: 40px;
+	color: #FFF;
+}
+
+.menu-icon > span {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.menu-icon:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+.temp {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.temp > div {
+	text-align: center;
+	transform:translateY(calc(-50% + 2.5em));
+	-ms-transform:translateY(calc(-50% + 2.5em));
+	-webkit-transform:translateY(calc(-50% + 2.5em));
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.temp a {
 	color:#FFF;
+}
+
+#logo {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 4em;
+}
+
+#you_go{
+	-webkit-animation: grow 5s;
 }
 
 a:hover{
 	text-decoration: none;
 }
 
+.landingText {
+	top: 50%;
+ 	-webkit-transform: translateY(calc(-50% + 200px));
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+.landingText > h1 {
+	font-size: 10vmin;
+}
+
 #bottomIMG {
     height: auto;
-}
-
-#logo > a{
-	font-family: 'Air Conditioner';
-	color: white;
-	font-size: 4vw;
-	max-width:30%;
-}
-
-.custom-nav {
-	position:fixed;
-	background-color: rgba(0,0,0,.75);
-	width: 75%;
-	right:12.5%;
-	padding: 0 1%;
-	z-index: 1;
-	height:10%;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
 }
 
 #landingScroll {
 	background: url("../img/background/Thatone.jpg") 0 0 fixed;
-	background-size: 100% 160%;
-	height: 100%;  
+	background-size: 100% 800px;
+	background-repeat: no-repeat;
     margin: 0 auto; 
-    width: 100%; 
     position: relative; 
     padding: 100px 0;
+    height:80%;
 }
 
 #data-container {
 	height: 100%;
 }
 
-#finalInfo {
-	font-size: 1vw;
+#map-canvas {
+	height:50%;
+	float: left;
 }
