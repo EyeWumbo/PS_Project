@@ -44,20 +44,17 @@
 			google.maps.event.addDomListener(window, 'resize', resize);
 		</script>
 
-
-
-
-
-
-
-
-
-
-
-        
-
 	</head>
 	<body>	
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0&appId=735477406494455";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		<div class="temp">
 			<div class="col-xs-3 text-left">
 				<a id="logo" href="#">DOUBLR</a>
@@ -71,12 +68,12 @@
 				<nav class="menu-icon" href="#"><span class="icon-align-justify"></span></nav>
 			</div>
 			<div class="col-xs-1 text-right">
-				<a class="bar_item" href="learn.php">Learn More</a>
+				<a class="bar_item" href="learn.php">Learn</a>
 			</div>
 		</div>
 		<section id="landingScroll" data-speed="8" data-type="background">
 			<div class="container landingText">
-				<h1 style="text-align:center; font-family:bebasneueregular;">THE NEW <a id="you_go" style="color:#FFF; font-size:50%;">YOU</a> IS HERE</h1>
+				<h1 style="text-align:center; font-family:bebasneueregular;">THE NEW <a id="you_go" style="color:#FFF;">YOU</a> IS HERE</h1>
 			</div>
 		</section>
 		<section id="data-container">
@@ -97,6 +94,13 @@
 	                  <p>Praesent faucibus nisl sit amet nulla sollicitudin</p>
               		</div>
 				</div>
+			</div>
+
+		</section>
+		<section id="social-media-area">
+			<div id="media-container">
+				<a href="https://twitter.com/doublr_us" class="twitter-follow-button" data-show-count="false">Follow @doublr_us</a>
+				<div style="float:right; right:5%" class="fb-like" data-href="https://www.facebook.com/doublr.us" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 			</div>
 		</section>
 	</body>
