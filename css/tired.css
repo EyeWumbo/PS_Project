@@ -1,6 +1,6 @@
 @-webkit-keyframes grow {
 	from{font-size:200%;}
-	to{font-size:50%;}
+	to{font-size:100%;}
 }
 
 @media only screen and (max-width: 640px) {
