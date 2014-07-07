@@ -78,7 +78,7 @@
 }
 
 #you_go{
-	-webkit-animation: grow 5s;
+	-webkit-animation: grow 2.5s;
 }
 
 a:hover{
@@ -120,4 +120,14 @@ a:hover{
 #map-canvas {
 	height:50%;
 	float: left;
+}
+
+#social-media-area {
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	background-color: #444;
+}
+
+#media-container {
+	margin-left: 5%;
 }
