@@ -12,11 +12,10 @@
 		display: inline-block;
 	}
 
-	
-
 	#map-canvas {
 		width: 90%;
 		left:5%;
+		margin-bottom: 5%;
 	}
 
 }
@@ -30,16 +29,8 @@
 	#map-canvas {
 		width: 40%; 
 		margin-left: 5%;
+		margin-right: 5%;
 	}
-
-	#finalInfo {
-		margin: 0 auto;
-	}
-
-	#teamInfo{
-		top:5%;
-	}
-
 }
 
 .menu-icon {
